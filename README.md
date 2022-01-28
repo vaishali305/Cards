@@ -1,2 +1,2 @@
-# card
- A multifunctionalities webpage
+# Cards
+ An attractive and multifunctional webpage
