@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <label class="logo-image">
+            <img src=images/logo.png>
+        </label>
+        <ul>
+            <li><a href="#">Wedding Cards</a></li>
+            <li><a href="#">Birthday Cards</a></li>
+            <li><a href="#">Feeling Cards</a></li>
+            <li><a href="#">Anniversary Cards</a></li>
+
+            <li><a href="#">Login|Signup</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+    <!-- *************carousel************* -->
+  
+        <div class="bg">
+            <img src="images/Background.jpg">
+            <div class="centered">Digital Card Details</div>
+        </div>
+
+        <!--  <div class="row"> -->
+        <div class="card">
+
+            <div class="caraousel-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Page1.jpg"></div>
+                        <div class="swiper-slide"><img src="images/Page2.jpg"></div>
+                        <div class="swiper-slide"><img src="images/Page3.jpg"></div>
+                    </div>
+                    <div class="swiper-pagination "></div>
+                </div>
+            </div>
+
+            <div class="w3-container">
+                <h1 class=" Title">Card Title</h1>
+                <br>
+                <p class="strike"><span class="big"> $499</span><s>$2000</s>
+                    <span class="bigger">75%Off</span></p>
+
+                        <br>
+
+                        <p class="text">Donec eu ornare mi. Sed finibus<br>
+                            condimentum mauris, ut dictum eros
+                            maximus vitae. Nullam<br>
+                            condimentum tortor ac elit feugiat
+                            iaculis. Aenean mauris nisl, blandit.</p>
+                        <br>
+                        <a href=" " class="hero-btn">Try this Card </a>
+            </div>
+        </div>
+    
+
+
+
+        <div class="vp">
+            <h2>Features</h2>
+        </div>
+
+        <div class="cardContainer">
+            <div class="cardd">
+                <img src="images/avatar.PNG" alt="Avatar" class="avatar">
+                <p>Create your card<br>
+                    in just 5 mins</p>
+            </div>
+            <div class="cardd">
+                <img src="images/avatar.PNG" alt="Avatar" class="avatar">
+                <p>Customize the Text
+                    with "Edit this Page" Option</p>
+            </div>
+            <div class="cardd">
+                <img src="images/avatar.PNG" alt="Avatar" class="avatar">
+                <p>Editing is available
+                    after purchase also</p>
+            </div>
+
+        </div>
+
+
+
+        <script>
+            $(document).ready(function () {
+                $('#icon').click(function () {
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidePerview: 'auto',
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 0,
+                    depth: 800,
+                    modifier: 1,
+                    slideShadows: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination ",
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                }
+            })
+        </script>
+
+</body>
+
+</html>
